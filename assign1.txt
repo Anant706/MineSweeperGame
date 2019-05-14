@@ -1,0 +1,54 @@
+Assign1: Due 11:59PM February 15
+
+***Your chance of success greatly increases if you start very early. Your chance of failure increases if you start late.
+
+Using Test First Development (no code without test first) implement the problem you designed in hw2. Feel free to evolve that design and use your judgment to make changes based on the improved understanding and learning.
+
+Take small steps, ask for frequent reviews.
+
+First start with a tests list and a canary test. Implement at most two more tests and minimum code to make those tests to pass. This is a great first step to complete and ask for a review.
+
+After completing the assignment (and only after) answer the following questions:
+
+1. What did you learn mainly in this assignment?
+
+I, Anant, learned how to write test code and how they help us to evolve the design and coding style. Earlier, I used to start writing codes for easy and important features after a few iterations of the strategic design. But I've never written test code. During this assignment, I learned what code coverage means and what is the significance of it. I also learned a new style of coding, decoupling and mocking the interdependencies. 
+
+I, Manisha, learned how to unlearn few things. I had to restrict myself to implement the entire design upfront. It was rather amazing to see how the tests build up the functionality. During the process, I was tempted to move out the code into Cell class, but I controlled myself and learned how to implement get the work done with minimum code. On the other side, I feel the code has smell and we shouldn't be handling state with if statements.   
+
+2. How is your current design different, if at all, from the strategic design created in hw2?
+
+Yes, it is very different what we desinged in hw2. All the classes and methods name got changed. Few more and new things were introduced which were not covered in strategic design. During implementation new relationship emerged between the classes and interfaces. Other than Minesweeper class, nothing matches between our strategic design and implementation. We had to add tests, which were not the part of strategic design. We had to move around method based on the responsibility of the class. We had to even rethink what our methods should return.
+
+3. Were there any surprises or things you did not expect along the way? Any particular problem faced, things you had to tackle that you did not expect beforehand?
+
+In the start, we were not much sure how TDD is going to help in the future. But later when we started solving the real problem then we realized that all the important and main logic where already developed and fully tested. We were very surprised how our 12 days of TDD work automatically helped us building the over game in just 2 days. We never had to go back and check again what is failing or what boundary condition is to be checked. 
+One thing which really surprised us that till second last day we were not sure how to handle the empty state but everything is well managed and represented only with mine and adjacent states.
+
+
+Total [100]: 98
+Code compiles [10]:
+
+Program produces reasonably desired results when run [10]: -2
+
+What I assume, clicking on a mine, results in a runtime failure:
+
+> ./gradlew run
+
+> Task :run
+Exception in thread "JavaFX Application Thread" java.lang.IllegalArgumentException: Invalid URL: Invalid URL or resource not found
+        at javafx.scene.image.Image.validateUrl(Image.java:1118)
+        at javafx.scene.image.Image.<init>(Image.java:620)
+
+Sealing a cell produces the same error as well.
+
+All tests pass [20]:
+Code Coverage [10]:
+Test quality [10]:
+Design quality [20]:
+
+Code quality [10]:
+
+Way more code for the UI than needed.
+
+Answers to questions in assign1.txt [10]:
